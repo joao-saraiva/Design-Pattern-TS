@@ -13,10 +13,10 @@ export default class Room implements MapSite{
   }
 
   getSide(direction: Direction): MapSite{
-    return this._sides[0];
+    return this._sides[direction];
   }
 
   setSide(direction: Direction, mapSite: MapSite): void{
-    
+    this._sides[direction] = mapSite;
   }
 }
