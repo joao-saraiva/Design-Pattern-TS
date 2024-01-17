@@ -7,7 +7,7 @@ services:
       dockerfile: Dockerfile
       target: base
     volumes:
-      - ./abstract_factory:/home/node/app/src
+      - ./adapter:/home/node/app/src
       - ./nodemon.json:/home/node/app/nodemon.json
     container_name: ts-node-docker
     expose:
